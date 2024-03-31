@@ -13,8 +13,26 @@
 			<div id="contents">
 				<div class="box">
 					<div>
-				      <div class="body">
-						  <h1>Travel</h1>
+				        <div class="body">
+						            <h1>Travel</h1>
+						            <ul id="sites">
+			        {{#each trips}}
+			                            <li>
+						                    <a href="/travel"><img src="images/{{this.image}}" alt="Img"</a>
+							                <h2><a href="/travel">{{this.name}}</a></h2>
+							                {{{this.description}}}
+										</li>
+				    {{/each}}	
+									</ul>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    {{> footer }}
+	        </div>
+        </body>
+        </html>
 			<div id="header">
 				<div id="logo">
 					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="100" width="200"></a>
