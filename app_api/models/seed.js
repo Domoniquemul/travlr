@@ -13,6 +13,6 @@ const seedDB = async () => {
 };
 //Close the MongoDB connection and exit
 seedDB().then(async () => {
-    await Mongoose.connection.clos();
+    await Mongoose.connection.close();
     process.exit(0);
 });
